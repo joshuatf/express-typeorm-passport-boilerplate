@@ -3,6 +3,7 @@ import * as bcrypt from 'bcrypt';
 import { getRepository } from 'typeorm';
 import User from './entity/User';
 
+require( 'dotenv' ).config();
 const LocalStrategy = require( 'passport-local' ).Strategy;
 const JWTStrategy = require( 'passport-jwt' ).Strategy;
 
